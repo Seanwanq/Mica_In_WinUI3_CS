@@ -1,0 +1,29 @@
+﻿<Window
+    x:Class="Mica_In_WinUI3_CS.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Mica_In_WinUI3_CS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button x:Name="myButton"
+                HorizontalAlignment="Center"
+                Margin="5 5 5 5"
+                CornerRadius="14"
+                Click="myButton_Click">Click Me</Button>
+        <Button x:Name="buttonClear"
+                HorizontalAlignment="Center"
+                Margin="5 5 5 5"
+                Click="buttonClear_Click">Clear</Button>
+        <Button x:Name="createNewWindow"
+                HorizontalAlignment="Center"
+                Margin="5 5 5 5"
+                Click="CreateNewWindow">Create New Acrylic Window</Button>
+        <Button x:Name="umtButton" 
+                HorizontalAlignment="Center"
+                Margin="5, 5, 5, 5"
+                Click="CreateUMTWindow">Understand Matrixtransform</Button>
+    </StackPanel>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Mica_In_WinUI3_CS (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Mica_In_WinUI3_CS (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
