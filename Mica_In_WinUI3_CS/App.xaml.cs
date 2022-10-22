@@ -53,7 +53,7 @@ namespace Mica_In_WinUI3_CS
 
             splashScreen.Close();
 
-            //m_window = new UnderstandMatrixTranform();
+            //m_window = new MainWindow();
             //m_window.Activate();
         }
 

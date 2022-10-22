@@ -120,7 +120,7 @@ namespace Mica_In_WinUI3_CS
             {
                 timestr = "times";
             }
-            myButton.Content = "You have clicked " + counter + " " + timestr + ".";
+            myButton.Content = "You have clicked " + counter + $" {timestr}.";
         }
 
 
@@ -141,6 +141,30 @@ namespace Mica_In_WinUI3_CS
         {
             UnderstandMatrixTranform umtWindow = new();
             umtWindow.Activate();
+        }
+
+        private void CreateWebView(object sender, RoutedEventArgs e)
+        {
+            webview2 wv2 = new();
+            wv2.Activate();
+        }
+
+        private void CreateBackground(object sender, RoutedEventArgs e)
+        {
+            TestBackground tbg = new();
+            tbg.Activate();
+        }
+
+        private void CreateTestFullScreen(object sender, RoutedEventArgs e)
+        {
+            TestFullScreen testfullscreen = new();
+            testfullscreen.Activate();
+        }
+
+        private void CreateAcrylicBlurMicaTransparentWindow(object sender, RoutedEventArgs e)
+        {
+            AcrylicBlurMicaTransparent abmtWindow = new();
+            abmtWindow.Activate();
         }
     }
 }

@@ -11,13 +11,31 @@
 
     <Grid  
         x:Name="MainGrid"
-        Width="20000"
-        Height="20000"
-        Background="#f4cccc" HorizontalAlignment="Center" VerticalAlignment="Center"
+        Background="#f4cccc"
         >
-        <TextBlock Text="Splash Screen" 
-                   FontSize="200"
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="A" 
+                   FontSize="50"
+                   Grid.Row="0"
                    FontFamily="Times New Roman"
                    HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="WONDERFUL" 
+                   FontSize="50"
+                   Grid.Row="1"
+                   FontFamily="Times New Roman"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="PRESENT" 
+                   FontSize="50"
+                   Grid.Row="2"
+                   FontFamily="Times New Roman"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+
     </Grid>
 </Window>

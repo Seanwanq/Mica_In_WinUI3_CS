@@ -7,23 +7,47 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton"
+    <ScrollViewer IsVerticalRailEnabled="True">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="myButton"
                 HorizontalAlignment="Center"
                 Margin="5 5 5 5"
                 CornerRadius="14"
                 Click="myButton_Click">Click Me</Button>
-        <Button x:Name="buttonClear"
+            <Button x:Name="buttonClear"
                 HorizontalAlignment="Center"
                 Margin="5 5 5 5"
                 Click="buttonClear_Click">Clear</Button>
-        <Button x:Name="createNewWindow"
+            <Button x:Name="createNewWindow"
                 HorizontalAlignment="Center"
                 Margin="5 5 5 5"
+                Width="200"
+                MinWidth="200"
                 Click="CreateNewWindow">Create New Acrylic Window</Button>
-        <Button x:Name="umtButton" 
+            <Button x:Name="umtButton" 
                 HorizontalAlignment="Center"
                 Margin="5, 5, 5, 5"
                 Click="CreateUMTWindow">Understand Matrixtransform</Button>
-    </StackPanel>
+            <Button x:Name="webButton" 
+                HorizontalAlignment="Center"
+                Margin="5, 5, 5, 5"
+                Click="CreateWebView">Create Webview2</Button>
+            <Button x:Name="TestBackgroundGrid" 
+                HorizontalAlignment="Center"
+                Margin="5, 5, 5, 5"
+                Click="CreateBackground">Test Background</Button>
+            <Button x:Name="TestFullScreen" 
+                HorizontalAlignment="Center"
+                Margin="5, 5, 5, 5"
+                Click="CreateTestFullScreen">Test Fullscreen</Button>
+            <Button x:Name="AcrylicBlurMicaTransparent" 
+                HorizontalAlignment="Center"
+                Margin="5, 5, 5, 5"
+                Click="CreateAcrylicBlurMicaTransparentWindow">Create a multistyle window</Button>
+
+
+        </StackPanel>
+
+    </ScrollViewer>
+
 </Window>

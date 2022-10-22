@@ -23,9 +23,14 @@
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="AcrylicBlurMicaTransparent.xaml" />
+    <None Remove="ClosingDialogForBackgroundWindow.xaml" />
     <None Remove="PaintWindow.xaml" />
     <None Remove="SplashScreen.xaml" />
+    <None Remove="TestBackground.xaml" />
+    <None Remove="TestFullScreen.xaml" />
     <None Remove="UnderstandMatrixTranform.xaml" />
+    <None Remove="webview2.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,8 +43,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.3" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.194" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.2" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.4" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.1" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -75,4 +81,31 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  <ItemGroup>
+    <CustomAdditionalCompileInputs Remove="webview2.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Remove="webview2.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomAdditionalCompileInputs Remove="TestBackground.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Remove="TestBackground.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AcrylicBlurMicaTransparent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="TestFullScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ClosingDialogForBackgroundWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
 </Project>
